@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newsunil:newsunil xmlns:newsunil="http://my.unil.ch/schemas/newsunil">
+  <newsunil:id>1650037788187</newsunil:id>
+  <newsunil:language>fr</newsunil:language>
+  <newsunil:status>usable</newsunil:status>
+  <newsunil:title>CINQ A SEPT &#xab;Les infirmier&#xb7;e&#xb7;s praticien&#xb7;ne&#xb7;s sp&#xe9;cialis&#xe9;&#xb7;e&#xb7;s &#x28;IPS&#x29;&#xbb;</newsunil:title>
+  <newsunil:catchLine>L&#x27;Institut La Source vous donne rendez-vous le&#x3a; JEUDI 12 MAI 2022&#x2c; DE 17H &#xc0; 19H&#x0a;Institut et Haute Ecole de la Sant&#xe9; La Source sur le Site de Beaulieu&#x2c; auditoire Gailloud-Lusso</newsunil:catchLine>
+  <newsunil:creation>
+    <newsunil:origin>myunil</newsunil:origin>
+    <newsunil:date>2022-04-15T15:49:32.000Z</newsunil:date>
+    <newsunil:user>not.real@example.org</newsunil:user>
+  </newsunil:creation>
+  <newsunil:modification>
+    <newsunil:date>2022-04-15T16:02:29.000Z</newsunil:date>
+    <newsunil:user>not.real@example.org</newsunil:user>
+  </newsunil:modification>
+  <newsunil:publication>
+    <newsunil:startDate>2022-04-15T15:49:32.000Z</newsunil:startDate>
+    <newsunil:endDate>2022-05-11T22:00:00.000Z</newsunil:endDate>
+  </newsunil:publication>
+  <newsunil:authors>
+    <newsunil:author>
+      <newsunil:firstName>Jane</newsunil:firstName>
+      <newsunil:lastName>Smith</newsunil:lastName>
+      <newsunil:institution/>
+      <newsunil:email>not.real@example.org</newsunil:email>
+    </newsunil:author>
+  </newsunil:authors>
+  <newsunil:contents>
+    <newsunil:text>
+      <newsunil:block>&lt;p&gt;Parmi les solutions possibles pour faire face au d&amp;eacute;fi pos&amp;eacute; par le vieillissement de la population et l&amp;rsquo;augmentation de la complexit&amp;eacute; des soins figure un &amp;eacute;largissement du r&amp;ocirc;le des infirmi&amp;egrave;res et infirmiers. Le canton de Vaud fait figure de pr&amp;eacute;curseur en Suisse en la mati&amp;egrave;re en inscrivant&amp;nbsp;&lt;a href=&quot;https://www.unil.ch/sciences-infirmieres/fr/home/menuinst/pratique-avancee/infirmierere-praticienne-specialisee.html&quot; target=&quot;_blank&quot;&gt;les infirmier&amp;middot;e&amp;middot;s praticien&amp;middot;ne&amp;middot;s sp&amp;eacute;cialis&amp;eacute;&amp;middot;e&amp;middot;s (IPS)&lt;/a&gt;&amp;nbsp;dans sa loi sur la sant&amp;eacute; publique en 2017.&lt;/p&gt;
+
+&lt;p&gt;Depuis 2018, l&amp;rsquo;&lt;a href=&quot;https://www.unil.ch/sciences-infirmieres/home.html&quot; target=&quot;_blank&quot;&gt;IUFRS&lt;/a&gt;&amp;nbsp;offre un cursus de Ma&amp;icirc;trise universitaire &amp;egrave;s Sciences en pratique infirmi&amp;egrave;re sp&amp;eacute;cialis&amp;eacute;e. Aujourd&amp;rsquo;hui, les premier&amp;middot;re&amp;middot;s infirmier&amp;middot;e&amp;middot;s praticien&amp;middot;ne&amp;middot;s sp&amp;eacute;cialis&amp;eacute;&amp;middot;e&amp;middot;s sont en fonction et dispensent des soins. Un bref aper&amp;ccedil;u de l&amp;rsquo;&amp;eacute;volution des &amp;eacute;tudes sera pr&amp;eacute;sent&amp;eacute; par Pre Manuela Eicher.&lt;/p&gt;
+
+&lt;p&gt;Christophe Nakamura et Charlotte Quansah, qui comptent parmi les premiers IPS du canton, pr&amp;eacute;senteront ensuite leurs r&amp;eacute;alit&amp;eacute;s quotidiennes, les facilit&amp;eacute;s et difficult&amp;eacute;s d&amp;rsquo;entr&amp;eacute;e dans une nouvelle fonction et les relations avec les diff&amp;eacute;rents membres de l&amp;rsquo;&amp;eacute;quipe interprofessionnelle.&lt;/p&gt;
+</newsunil:block>
+    </newsunil:text>
+  </newsunil:contents>
+  <newsunil:mainImage>
+    <newsunil:legend/>
+    <newsunil:title/>
+    <newsunil:uri>info:fedora/newsunil:image_1650037788187.M</newsunil:uri>
+  </newsunil:mainImage>
+  <newsunil:thumbnail>
+    <newsunil:legend/>
+    <newsunil:title/>
+    <newsunil:uri>info:fedora/newsunil:image_1650037788187.T</newsunil:uri>
+  </newsunil:thumbnail>
+  <newsunil:links>
+    <newsunil:link>
+      <newsunil:type>website</newsunil:type>
+      <newsunil:title>CINQ A SEPT: IPS</newsunil:title>
+      <newsunil:url>https://www.ecolelasource.ch/evenement/cinq-a-sept-ips/</newsunil:url>
+      <newsunil:description/>
+    </newsunil:link>
+  </newsunil:links>
+  <newsunil:documents>
+    <newsunil:document>
+      <newsunil:fileName>Annonce CINQ A SEPT - IPS</newsunil:fileName>
+      <newsunil:uri>info:fedora/newsunil:document_1650037788187.D1650038106256</newsunil:uri>
+      <newsunil:mimetype>application/pdf</newsunil:mimetype>
+    </newsunil:document>
+  </newsunil:documents>
+</newsunil:newsunil>

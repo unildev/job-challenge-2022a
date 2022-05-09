@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newsunil:newsunil xmlns:newsunil="http://my.unil.ch/schemas/newsunil">
+    <newsunil:id>1650006068688</newsunil:id>
+    <newsunil:language>fr</newsunil:language>
+    <newsunil:status>usable</newsunil:status>
+    <newsunil:title>Guerres civiles et r&#xe9;volutions</newsunil:title>
+    <newsunil:catchLine>Cette conf&#xe9;rence est donn&#xe9;e dans le cadre du cours &#xab; R&#xe9;sistances et Protestations en contexte autoritaire &#xbb; &#x28;Master en science politique&#x29;</newsunil:catchLine>
+    <newsunil:creation>
+        <newsunil:origin>myunil</newsunil:origin>
+        <newsunil:date>2022-04-15T06:59:34.000Z</newsunil:date>
+        <newsunil:user>not.real@example.org</newsunil:user>
+    </newsunil:creation>
+    <newsunil:modification>
+        <newsunil:date>2022-04-15T07:05:14.000Z</newsunil:date>
+        <newsunil:user>not.real@example.org</newsunil:user>
+    </newsunil:modification>
+    <newsunil:publication>
+        <newsunil:startDate>2022-04-15T06:59:34.000Z</newsunil:startDate>
+        <newsunil:endDate>2022-04-28T08:00:00.000Z</newsunil:endDate>
+    </newsunil:publication>
+    <newsunil:authors>
+        <newsunil:author>
+            <newsunil:firstName/>
+            <newsunil:lastName/>
+            <newsunil:institution/>
+            <newsunil:email>not.real@example.org</newsunil:email>
+        </newsunil:author>
+    </newsunil:authors>
+    <newsunil:contents>
+        <newsunil:text>
+            <newsunil:block>some text</newsunil:block>
+        </newsunil:text>
+    </newsunil:contents>
+    <newsunil:event>
+        <newsunil:startDate>2022-04-28T08:30:00.000Z</newsunil:startDate>
+        <newsunil:endDate>2022-04-28T10:00:00.000Z</newsunil:endDate>
+        <newsunil:presenters>
+            <newsunil:presenter>
+                <newsunil:firstName>John</newsunil:firstName>
+                <newsunil:lastName>Smith</newsunil:lastName>
+                <newsunil:institution>CNRS, CERI</newsunil:institution>
+                <newsunil:email>not.real@example.org</newsunil:email>
+            </newsunil:presenter>
+        </newsunil:presenters>
+        <newsunil:organisers>
+            <newsunil:organiser>
+                <newsunil:organisation>CRAPUL</newsunil:organisation>
+            </newsunil:organiser>
+        </newsunil:organisers>
+        <newsunil:place>
+            <newsunil:building>G&#xe9;opolis</newsunil:building>
+            <newsunil:room>3077</newsunil:room>
+        </newsunil:place>
+    </newsunil:event>
+    <newsunil:links>
+        <newsunil:link>
+            <newsunil:type>website</newsunil:type>
+            <newsunil:title>link</newsunil:title>
+        </newsunil:link>
+    </newsunil:links>
+</newsunil:newsunil>

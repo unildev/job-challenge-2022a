@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://my.unil.ch/schemas/newsunil"
+           xmlns:newsunil="http://my.unil.ch/schemas/newsunil">
+
+    <!-- ROOT -->
+    <xs:element name="newsunil" type="newsunil:NewsunilType"/>
+
+    <xs:simpleType name="OriginType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="test"/>
+            <xs:enumeration value="myunil"/>
+            <xs:enumeration value="foreve"/>
+            <xs:enumeration value="hec"/>
+            <xs:enumeration value="storenews"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="EmailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@\s]+@[^\.\s]+\.\S+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="FedoraObjectUriType">
+        <xs:restriction base="xs:anyURI">
+            <xs:pattern value="info:fedora/[\w:_\.]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="StatusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="usable"/>
+            <xs:enumeration value="proposed"/>
+            <xs:enumeration value="embargoed"/>
+            <xs:enumeration value="deleted"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="VideoSourceType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="youtube"/>
+            <xs:enumeration value="hva"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="HrefType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="document"/>
+            <xs:enumeration value="website"/>
+            <xs:enumeration value="attached"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="LangType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="fr"/>
+            <xs:enumeration value="en"/>
+            <xs:enumeration value="de"/>
+            <xs:enumeration value="it"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="NewsunilType">
+        <xs:sequence>
+            <xs:element name="id">
+                <xs:simpleType>
+                    <xs:restriction base="xs:long">
+                        <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="language" type="newsunil:LangType"/>
+            <xs:element minOccurs="0" name="aliases" type="newsunil:AliasesType"/>
+            <xs:element name="status" type="newsunil:StatusType"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="catchLine" type="xs:string"/>
+            <xs:element name="creation" type="newsunil:EditOperationType"/>
+            <xs:element name="modification" type="newsunil:EditOperationType"/>
+            <xs:element name="publication" type="newsunil:PublicationType"/>
+            <xs:element name="authors" type="newsunil:AuthorsType"/>
+            <xs:element name="contents" type="newsunil:ContentsType"/>
+            <xs:element minOccurs="0" name="mainImage" type="newsunil:PhotoType"/>
+            <xs:element minOccurs="0" name="thumbnail" type="newsunil:PhotoType"/>
+            <xs:element minOccurs="0" name="video" type="newsunil:VideoType"/>
+            <xs:element minOccurs="0" name="event" type="newsunil:EventType"/>
+            <xs:element minOccurs="0" name="links" type="newsunil:LinksType"/>
+            <xs:element minOccurs="0" name="documents" type="newsunil:DocumentsType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EditOperationType">
+        <xs:sequence>
+            <xs:element name="origin" default="test" type="newsunil:OriginType" minOccurs="0"/>
+            <xs:element name="date" type="xs:dateTime"/>
+            <xs:element name="user" type="newsunil:EmailType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PublicationType">
+        <xs:sequence>
+            <xs:element name="startDate" type="xs:dateTime"/>
+            <xs:element name="endDate" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ContentsType">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="text" type="newsunil:TextType"/>
+            <xs:element name="photo" type="newsunil:PhotoType"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="TextType">
+        <xs:sequence>
+            <xs:element name="block" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PhotoType">
+        <xs:sequence>
+            <xs:element name="legend" type="xs:string" minOccurs="0"/>
+            <xs:element name="title" type="xs:string" minOccurs="0"/>
+            <xs:element name="uri" type="newsunil:FedoraObjectUriType" minOccurs="0"/>
+            <xs:element minOccurs="0" name="sourceUrl" type="xs:anyURI"/>
+            <xs:element minOccurs="0" name="mimetype" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PersonType">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element minOccurs="0" name="title" type="xs:string"/>
+            <xs:element name="institution" type="xs:string" minOccurs="0"/>
+            <xs:element minOccurs="0" name="email" type="newsunil:EmailType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AuthorType">
+        <xs:complexContent>
+            <xs:extension base="newsunil:PersonType">
+                <xs:sequence>
+                    <xs:element name="photo" type="newsunil:PhotoType" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ContactType">
+        <xs:complexContent>
+            <xs:extension base="newsunil:PersonType">
+                <xs:sequence>
+                    <xs:element name="telephone" type="xs:string" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="AuthorsType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="author" type="newsunil:AuthorType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EventType">
+        <xs:sequence>
+            <xs:element name="startDate" type="xs:dateTime"/>
+            <xs:element name="endDate" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="contact" type="newsunil:ContactType"/>
+            <xs:element minOccurs="0" name="presenters" type="newsunil:PresentersType"/>
+            <xs:element minOccurs="0" name="organisers" type="newsunil:OrganisersType"/>
+            <xs:element minOccurs="0" name="preannouncement" type="newsunil:PreannouncementType"/>
+            <xs:element minOccurs="0" name="place" type="newsunil:PlaceType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PresentersType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="presenter" type="newsunil:PersonType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OrganiserType">
+        <xs:sequence>
+            <xs:element name="organisation" type="xs:string"/>
+            <xs:element minOccurs="0" name="logo" type="newsunil:PhotoType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OrganisersType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="organiser" type="newsunil:OrganiserType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PreannouncementType">
+        <xs:sequence>
+            <xs:element name="text" type="newsunil:TextType"/>
+            <xs:element name="startDate" type="xs:dateTime"/>
+            <xs:element name="endDate" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="fees" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PlaceType">
+        <xs:sequence>
+            <xs:element name="building" type="xs:string"/>
+            <xs:element name="room" type="xs:string"/>
+            <xs:element minOccurs="0" name="address" type="xs:string"/>
+            <xs:element minOccurs="0" name="npa" type="xs:string"/>
+            <xs:element minOccurs="0" name="city" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="VideoType">
+        <xs:sequence>
+            <xs:element name="source" type="newsunil:VideoSourceType"></xs:element>
+            <xs:element name="url" type="xs:anyURI"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LinkType">
+        <xs:sequence>
+            <xs:element name="type" type="newsunil:HrefType"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="url" type="xs:anyURI" minOccurs="0"/>
+            <xs:element minOccurs="0" name="uri" type="newsunil:FedoraObjectUriType"/>
+            <xs:element minOccurs="0" name="description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LinksType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="link" type="newsunil:LinkType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DocumentType">
+        <xs:sequence>
+            <xs:element name="fileName" type="xs:string"/>
+            <xs:element name="title" type="xs:string" minOccurs="0"/>
+            <xs:element name="uri" type="newsunil:FedoraObjectUriType" minOccurs="0"/>
+            <xs:element minOccurs="0" name="sourceUrl" type="xs:anyURI"/>
+            <xs:element minOccurs="0" name="mimetype" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DocumentsType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="document" type="newsunil:DocumentType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AliasesType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="alias" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

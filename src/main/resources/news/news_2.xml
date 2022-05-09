@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newsunil:newsunil xmlns:newsunil="http://my.unil.ch/schemas/newsunil">
+  <newsunil:id>1650352507423</newsunil:id>
+  <newsunil:language>fr</newsunil:language>
+  <newsunil:status>usable</newsunil:status>
+  <newsunil:title>VQ&#x3a; je suis musicienne et cheffe d&#x27;orchestre</newsunil:title>
+  <newsunil:catchLine>Intervention de Lavinia Gianettoni dans l&#x27;&#xe9;mission &#x22;Avis d&#x27;experts&#x22;&#x2c; le 4 avril 2022&#x2e; </newsunil:catchLine>
+  <newsunil:creation>
+    <newsunil:origin>myunil</newsunil:origin>
+    <newsunil:date>2022-04-19T07:11:51.000Z</newsunil:date>
+    <newsunil:user>not.real@example.org</newsunil:user>
+  </newsunil:creation>
+  <newsunil:modification>
+    <newsunil:date>2022-04-19T07:24:51.000Z</newsunil:date>
+    <newsunil:user>not.real@example.org</newsunil:user>
+  </newsunil:modification>
+  <newsunil:publication>
+    <newsunil:startDate>2022-04-19T07:11:51.000Z</newsunil:startDate>
+    <newsunil:endDate>2022-05-30T22:00:00.000Z</newsunil:endDate>
+  </newsunil:publication>
+  <newsunil:authors>
+    <newsunil:author>
+      <newsunil:firstName>Jane</newsunil:firstName>
+      <newsunil:lastName>Smith</newsunil:lastName>
+      <newsunil:institution/>
+      <newsunil:email>not.real@example.org</newsunil:email>
+    </newsunil:author>
+  </newsunil:authors>
+  <newsunil:contents>
+    <newsunil:text>
+      <newsunil:block>&lt;p&gt;Comme en t&amp;eacute;moigne Alba Cirafici, violoniste et cheffe d&amp;rsquo;orchestre, il y a 40 ans, se lancer dans une carri&amp;egrave;re en musique classique en tant que femme &amp;eacute;tait tout &amp;agrave; fait saugrenu. Des d&amp;eacute;cennies plus tard, la situation a nettement &amp;eacute;volu&amp;eacute;: les ensembles sont aujourd&amp;rsquo;hui mixtes et voir une femme jouer du violon n&amp;rsquo;a plus rien d&amp;rsquo;exceptionnel. Est-ce la preuve qu&amp;rsquo;aujourd&amp;rsquo;hui encore les professions ont un genre? Comment l&amp;rsquo;expliquer? Que dire aux femmes souhaitant se lancer dans un m&amp;eacute;tier &amp;agrave; priori r&amp;eacute;serv&amp;eacute; aux hommes et vice-versa?&lt;/p&gt;
+</newsunil:block>
+    </newsunil:text>
+  </newsunil:contents>
+  <newsunil:mainImage>
+    <newsunil:legend/>
+    <newsunil:title/>
+    <newsunil:uri>info:fedora/newsunil:image_1650352507423.M</newsunil:uri>
+  </newsunil:mainImage>
+  <newsunil:thumbnail>
+    <newsunil:legend/>
+    <newsunil:title/>
+    <newsunil:uri>info:fedora/newsunil:image_1650352507423.T</newsunil:uri>
+  </newsunil:thumbnail>
+  <newsunil:links>
+    <newsunil:link>
+      <newsunil:type>website</newsunil:type>
+      <newsunil:title>Emission</newsunil:title>
+      <newsunil:url>https://avisdexperts.ch/videos/view/14483</newsunil:url>
+      <newsunil:description/>
+    </newsunil:link>
+  </newsunil:links>
+</newsunil:newsunil>
