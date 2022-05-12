@@ -25,6 +25,12 @@ important sources to consult:
 
 Also, please pay special attention to the `FIXME` comments in the various places in the source code.
 
+**IntelliJ IDE, generated sources**
+
+Please note that if you are using IntelliJ IDE, you may need to specify `target/generated/src/main/java` directory a root
+directory for generated sources. This is the directory where the generated JAXB binding will be placed by the
+`cxf-xjc-plugin`.
+
 ### News processing application
 
 This challenge refers to a hypothetical news processing application which uses a small collection of actual news items from

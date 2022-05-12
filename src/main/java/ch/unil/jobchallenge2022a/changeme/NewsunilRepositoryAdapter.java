@@ -11,7 +11,7 @@ import java.io.IOException;
 
 /**
  * Secondary (driven) adapter for operations on the repository for news. Uses Spring OXM
- * {@link Jaxb2Marshaller} to unmarshal news from corresponding XML files.
+ * {@link Jaxb2Marshaller} to unmarshal news from the corresponding XML files.
  */
 @Service
 public class NewsunilRepositoryAdapter implements NewsRepositoryOperationsOutputPort {
