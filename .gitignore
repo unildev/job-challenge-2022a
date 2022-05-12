@@ -2,4 +2,4 @@ target/
 diagram/~*
 diagram/*.drawio
 .idea/
-.iml
+*.iml
