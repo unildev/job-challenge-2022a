@@ -46,7 +46,7 @@ Here is an example of the program's output when it is executed as is (before any
 2022-04-29 12:48:48.324  INFO 46852 --- [           main] c.u.j.NewsProcessingApplication          : [Application] Executing the use case for each piece of news...
 2022-04-29 12:48:48.344  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=1, title=Guerres civiles et révolutions)
 2022-04-29 12:48:48.351  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=2, title=VQ: je suis musicienne et cheffe d'orchestre)
-2022-04-29 12:48:48.356  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=1650037788187, title=CINQ A SEPT «Les infirmier·e·s praticien·ne·s spécialisé·e·s (IPS)»)
+2022-04-29 12:48:48.356  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=3, title=CINQ A SEPT «Les infirmier·e·s praticien·ne·s spécialisé·e·s (IPS)»)
 ```
 
 The implementation relies on the nomenclature and the ideas behind Hexagonal and Clean Architecture principles. The overall architecture diagram
