@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <newsunil:newsunil xmlns:newsunil="http://my.unil.ch/schemas/newsunil">
-  <newsunil:id>1650352507423</newsunil:id>
+  <newsunil:id>2</newsunil:id>
   <newsunil:language>fr</newsunil:language>
   <newsunil:status>usable</newsunil:status>
   <newsunil:title>VQ&#x3a; je suis musicienne et cheffe d&#x27;orchestre</newsunil:title>
@@ -35,12 +35,12 @@
   <newsunil:mainImage>
     <newsunil:legend/>
     <newsunil:title/>
-    <newsunil:uri>info:fedora/newsunil:image_1650352507423.M</newsunil:uri>
+    <newsunil:uri>info:fedora/newsunil:image_2.M</newsunil:uri>
   </newsunil:mainImage>
   <newsunil:thumbnail>
     <newsunil:legend/>
     <newsunil:title/>
-    <newsunil:uri>info:fedora/newsunil:image_1650352507423.T</newsunil:uri>
+    <newsunil:uri>info:fedora/newsunil:image_2.T</newsunil:uri>
   </newsunil:thumbnail>
   <newsunil:links>
     <newsunil:link>

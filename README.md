@@ -44,8 +44,8 @@ Here is an example of the program's output when it is executed as is (before any
 2022-04-29 12:48:47.709  INFO 46852 --- [           main] c.u.j.NewsProcessingApplication          : No active profile set, falling back to 1 default profile: "default"
 2022-04-29 12:48:48.323  INFO 46852 --- [           main] c.u.j.NewsProcessingApplication          : Started NewsProcessingApplication in 0.845 seconds (JVM running for 1.296)
 2022-04-29 12:48:48.324  INFO 46852 --- [           main] c.u.j.NewsProcessingApplication          : [Application] Executing the use case for each piece of news...
-2022-04-29 12:48:48.344  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=1650006068688, title=Guerres civiles et révolutions)
-2022-04-29 12:48:48.351  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=1650352507423, title=VQ: je suis musicienne et cheffe d'orchestre)
+2022-04-29 12:48:48.344  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=1, title=Guerres civiles et révolutions)
+2022-04-29 12:48:48.351  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=2, title=VQ: je suis musicienne et cheffe d'orchestre)
 2022-04-29 12:48:48.356  INFO 46852 --- [           main] c.u.j.changeme.LoggingNewsPresenter      : [Output] Here are the news: News(id=1650037788187, title=CINQ A SEPT «Les infirmier·e·s praticien·ne·s spécialisé·e·s (IPS)»)
 ```
 
@@ -92,9 +92,9 @@ In this part, your task is to externalize some configuration. In `Jaxb2Marshalle
 - the path to the XSD schema used by the unmarshaller for validation
 - the path to the directory where XML files are stored
 
-### Part 4: REST end-point
+### Part 4: REST endpoint
 
-In this part, your task is to write a simple REST which will return a JSON representation of a piece of news when executing 
+In this part, your task is to write a simple REST endpoint which will return a JSON representation of a piece of news when executing 
 a GET request to `/news/{id}`.
 
 These are some points to keep in mind when you work on this task:
